@@ -1,0 +1,26 @@
+/* Night mode styles */
+.night-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 50%;
+    margin: 30px auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+span{
+    color: #0066cc; /* Blue text color */
+}
+
+.blue-button {
+    background-color: #0066cc; /* Blue button background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 0 20px 460px;
+}
+
+.blue-button:hover {
+    background-color: #0052a3; /* Darker blue on hover */
+}
