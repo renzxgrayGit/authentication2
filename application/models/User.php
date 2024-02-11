@@ -39,11 +39,11 @@ class User extends CI_Model
         return $row['count'] > 0;
     }
 
-    function login_user($contact, $password) 
+    function login_user($contact_or_email, $password) 
     {
         // Run a SQL query to fetch user data based on contact number
-        $sql = "SELECT * FROM users WHERE contact_number = ?";
-        $query = $this->db->query($sql, array($contact));
+        $sql = "SELECT * FROM users WHERE contact_number = ? OR email = ?";
+        $query = $this->db->query($sql, array($contact_or_email, $contact_or_email));
         $user = $query->row();
 
         if ($user) // If user exist in database

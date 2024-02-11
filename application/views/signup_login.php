@@ -45,9 +45,9 @@
             <form action="/users/login" method="post" id="login_form">
                 <h1>Login</h1>
                 <input type="hidden" name="action" value="login">
-                <!-- contact number -->
-                <label for="contact_number">Contact number: </label>
-                <input type="text" name="contact_number" placeholder="Contact number">
+                 <!-- contact number or email -->
+                <label for="contact_or_email">Contact number or Email: </label>
+                <input type="text" name="contact_or_email" placeholder="Contact number or Email">
                 <!-- password -->
                 <label for="password">Password: </label>
                 <input type="password" name="password" placeholder="Password">

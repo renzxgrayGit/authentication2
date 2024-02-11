@@ -77,11 +77,11 @@ class Users extends CI_Controller
 		// Load the User model
 		$this->load->model('User');
 
-		$contact_number = $this->input->post('contact_number');
+		$contact_or_email = $this->input->post('contact_or_email');
 		$password = $this->input->post('password');
 
 		// Check if the user exists with the provided credentials
-		$user = $this->User->login_user($contact_number, $password);
+		$user = $this->User->login_user($contact_or_email, $password);
 
 		if ($user) 
 		{
